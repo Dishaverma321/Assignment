@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>YAY! It's BOGO</h2>
+
+  <div class="option" data-option-id="1">
+    <div class="unit-row">
+      <label>
+        <input type="radio" name="units" value="1" onchange="handleRadioChange(this)">
+        1 Unit <span class="badge">10% Off</span><br>
+        <small>Standard Price</small>
+      </label>
+      <div class="price-detail">
+        <div class="price">$10.00 USD</div>
+        <div class="old-price">$24.00 USD</div>
+      </div>
+    </div>
+    <div class="selectors">
+      <div>
+        #1:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Black</option>
+          <option>White</option>
+        </select>
+      </div>
+      <div>
+        #2:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Colour</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="option " data-option-id="2">
+    <div class="unit-row">
+      <label>
+        <input type="radio" name="units" value="1" onchange="handleRadioChange(this)">
+        2 Unit <span class="badge">20% Off</span>
+      </label>
+      <div class="price-detail">
+        <div class="price">$18.00 USD</div>
+        <div class="old-price">$24.00 USD</div>
+      </div>
+    </div>
+    <div class="selectors">
+      <div>
+        #1:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Black</option>
+          <option>White</option>
+        </select>
+      </div>
+      <div>
+        #2:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Colour</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-option-id="3">
+    <div class="unit-row">
+        <label>
+      <input type="radio" name="units" value="1" onchange="handleRadioChange(this)">
+      3 Unit <span class="badge">30% Off</span>
+    </label>
+    <div class="price-detail">
+      <div class="price">$24.00 USD</div>
+      <span class="old-price">$24.00 USD</span>
+    </div>
+    </div>
+    <div class="selectors">
+      <div>
+        #1:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Black</option>
+          <option>White</option>
+        </select>
+      </div>
+      <div>
+        #2:
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Colour</option>
+          <option>Red</option>
+          <option>Blue</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="bottom-total">
+    <div class="free-delivery">Free Delivery</div>
+    <div class="total">Total : $18.00 USD</div>
+  </div>
+
+  <button class="btn">+ Add to Cart</button>
+
+  <div class="footer">@ Powered by Pumper</div>
+
+
+<script>
+  function handleRadioChange(radio) {
+    const allOptions = document.querySelectorAll('.option');
+    allOptions.forEach(option => option.classList.remove('active'));
+
+    const selectedOption = radio.closest('.option');
+    if (selectedOption){
+      selectedOption.classList.add('active');
+    }
+  }
+</script> 
+  
+</body>c
+
+</html>
